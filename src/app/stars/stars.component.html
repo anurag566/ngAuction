@@ -1,3 +1,7 @@
 <p>
-  stars works!
+  <span *ngFor="let isEmpty of stars " class="material-icons" >
+    {{ isEmpty ? "star_border" : 'star_rate'}}
+    {{isEmpty}}
+  </span>
+  <span>{{rating}} stars</span>
 </p>
